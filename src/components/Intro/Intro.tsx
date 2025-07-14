@@ -3,16 +3,16 @@ import * as SC from "./IntroStyled";
 const Intro: React.FC = () => {
   return (
     <SC.IntroCon>
-      <div>
+      <SC.FlexIntroTitleCon>
         <div>new</div>
         <p>monograph dashboard</p>
-      </div>
+      </SC.FlexIntroTitleCon>
       <h3>powerful insights into your team</h3>
       <p>Project planning and time tracking for agile teams</p>
-      <div>
+      <SC.IntroBtnCon>
         <button>schedule a demo</button>
         <p>to see a preview</p>
-      </div>
+      </SC.IntroBtnCon>
     </SC.IntroCon>
   );
 };
