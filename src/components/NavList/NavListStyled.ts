@@ -1,17 +1,10 @@
 import styled from "@emotion/styled";
 
 export const NavList = styled.ul`
-padding-top: 24px;
-padding-bottom: 24px;
-padding-left: 24px;
-padding-right: 24px;
+
 
 text-align: center;
 
-
-background-color: #fff;
-
-border-radius: 4px;
 `
 
 export const NavListItem = styled.li`

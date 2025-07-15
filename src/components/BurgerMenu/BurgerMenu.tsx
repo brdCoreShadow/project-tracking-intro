@@ -1,10 +1,12 @@
+import * as SC from "./BurgerMenuStyled"
+
 import NavList from "../NavList/NavList";
 
 const BurgerMenu:React.FC = () => {
     return ( 
-        <div>
+        <SC.BurgerMenuCon>
             <NavList/>
-        </div>
+        </SC.BurgerMenuCon>
      );
 }
  
