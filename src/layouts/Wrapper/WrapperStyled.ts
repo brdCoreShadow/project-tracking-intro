@@ -22,5 +22,9 @@ z-index: -1;
     background-color: #EDF2F6;
 
     border-bottom-left-radius: 64px;
+
+    @media (min-width: 1280px){
+        height: 430px;
+    }
 }
 `
