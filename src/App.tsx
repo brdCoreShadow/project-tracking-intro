@@ -1,5 +1,6 @@
 import BurgerBrn from "./components/BurgerBtn/BurgerBtn";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
+import DeskFlex from "./components/DeskFlex/DeskFlex";
 import Hero from "./components/Hero/Hero";
 import Intro from "./components/Intro/Intro";
 import Logo from "./components/Logo/Logo";
@@ -34,9 +35,16 @@ const App: React.FC = () => {
             <BurgerMenu />
           </BurgerPortal>
         )}
-        <Hero />
+        {isDesktop ? (
+          <DeskFlex>
+            <Intro />
+            <Hero />
+          </DeskFlex>
+        ) : (
+          <Hero />
+        )}
       </Wrapper>
-      <Intro />
+      {!isDesktop && <Intro />}
     </div>
   );
 };
