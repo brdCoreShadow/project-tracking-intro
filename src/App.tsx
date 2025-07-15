@@ -4,14 +4,18 @@ import Intro from "./components/Intro/Intro";
 import Logo from "./components/Logo/Logo";
 import Header from "./layouts/Header/Header";
 import Wrapper from "./layouts/Wrapper/Wrapper";
+import { useToggle } from "./utils/hooks";
 
 const App: React.FC = () => {
+
+const {isBurger, openBurger, closeBurger} = useToggle()
+
   return (
     <div>
       <Wrapper>
         <Header>
           <Logo/>
-          <BurgerBrn/>
+          <BurgerBrn isBurger={isBurger} openBurger={openBurger} closeBurger={closeBurger}/>
         </Header>
         <Hero/>
       </Wrapper>
