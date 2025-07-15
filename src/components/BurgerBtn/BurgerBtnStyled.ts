@@ -1,9 +1,6 @@
 import { TBurger } from "@/utils/types";
 import styled from "@emotion/styled";
 
-import styled from "@emotion/styled";
-import { TBurger } from "@/utils/types"; // adjust the import if needed
-
 export const BurgerBtnStyled = styled.button<Partial<TBurger>>`
   width: 24px;
   height: 16px;
