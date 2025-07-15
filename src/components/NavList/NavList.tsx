@@ -1,8 +1,8 @@
 import * as SC from "./NavListStyled";
 
-const NavList = () => {
+const NavList:React.FC = () => {
   return (
-    <SC.NavList>
+    <SC.NavListStyled>
       <SC.NavListItem>
         <a href="#">product</a>
       </SC.NavListItem>
@@ -15,7 +15,7 @@ const NavList = () => {
       <SC.NavListItem>
         <a href="#">login</a>
       </SC.NavListItem>
-    </SC.NavList>
+    </SC.NavListStyled>
   );
 };
 
